@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/result.css">
+        <title>RESULT</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <img id="logo" src="/img/logo.jpg" alt="logo">
+            </div>
+            <div>
+                <p id="intro">
+                    당신의 오늘은<br><br>
+                    <span class="emotion" th:if="${emotion == 1}">행복한</span>
+                    <span class="emotion" th:if="${emotion == 2}">슬픈</span>
+                    <span class="emotion" th:if="${emotion == 3}">화나는</span>
+                    날이군요
+                </p>
+            </div>
+            <div>
+                <p id="music">
+                    <span class="result" th:text="${singer}"/> 의<br><br>
+                    <span class="result" th:text="${song}"/> 을(를)<br><br>
+                    당신의 하루에 들려드릴게요
+                </p>
+            </div>
+            <div>
+                <a href="/page/intro">
+                    <img id="next" src="/img/next.jpg" alt="next">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

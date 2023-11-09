@@ -1,0 +1,70 @@
+#logo {
+
+    position: absolute;
+    width: 367px;
+    height: 367px;
+    left: 501px;
+    top: 294px;
+
+}
+
+p {
+
+    position: absolute;
+    width: 300px;
+    height: 48px;
+    left: 933px;
+    top: 290px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 650;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #1E1E1E;
+
+}
+
+#input {
+
+    position: absolute;
+    width: 600px;
+    height: 55px;
+    left: 933px;
+    top: 500px;
+
+    border: none;
+    border-bottom: 6px solid #000000;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 650;
+    font-size: 35px;
+    line-height: 48px;
+
+    color: #1E1E1E;
+
+}
+
+#input:focus {
+
+    outline: none;
+    border-bottom: 6px solid #000000;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 650;
+    font-size: 35px;
+    line-height: 48px;
+
+    color: #1E1E1E;
+
+}
+
+#submit {
+
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 1500px;
+    top: 600px;
+
+}

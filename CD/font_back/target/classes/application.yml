@@ -1,0 +1,12 @@
+server:
+  port: 8001
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: C##MUSIC
+    password: MUSIC
+
+mybatis:
+  mapper-locations: mappers/**/*.xml

@@ -1,0 +1,36 @@
+#logo {
+
+    position: absolute;
+    width: 367px;
+    height: 367px;
+    left: 501px;
+    top: 294px;
+
+}
+
+p {
+
+    position: absolute;
+    width: 400px;
+    height: 48px;
+    left: 933px;
+    top: 290px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 650;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #1E1E1E;
+
+}
+
+#next {
+
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 1500px;
+    top: 600px;
+
+}

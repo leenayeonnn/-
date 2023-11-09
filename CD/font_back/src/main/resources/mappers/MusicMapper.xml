@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.music.back.model.dao.MusicMapper">
+
+    <resultMap id="musicResultMap" type="com.music.back.model.dto.MusicDTO">
+        <result property="song" column="SONG_NAME"/>
+        <result property="singer" column="SINGER"/>
+    </resultMap>
+
+    <select id="findRandomMusicAboutEmotion" resultMap="musicResultMap">
+        SELECT
+               A.SONG_NAME
+             , A.SINGER
+          FROM (
+            SELECT B.*
+              FROM MUSIC B
+             WHERE B.EMOTION_CODE = #{result}
+             ORDER BY DBMS_RANDOM.RANDOM
+          ) A
+         WHERE ROWNUM = 1
+    </select>
+
+</mapper>
